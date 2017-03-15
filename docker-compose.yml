@@ -1,0 +1,9 @@
+version: '2'
+services:
+  test:
+    build: docker_test/
+    restart: always
+    network_mode: host
+  rfw:
+    build: docker_rfw/
+    network_mode: host
